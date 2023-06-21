@@ -1,0 +1,186 @@
+
+Fundamentals
+    keywords
+    variables and values
+    rules of identifiers
+    datatypes
+    opeartors
+    flow control statements
+        1) DMS      - if , if else , if else if  else , switch
+        2) Looping  - for , while , do while , for in , for of
+    functions
+
+ECMA script - 6
+    let , const
+
+    function scope : if the variables are  accessable inside the block and even
+    outside the block where you have declared , but not outside the function , we say
+    it has a function scope.
+
+    Block scope : if the variables are  accessable only inside the block where you have
+    declared , but not outside the block , then  we say it has a block scope.
+
+    Arrays
+
+    -> Arrays in js is used to store multiple values in a single variable.
+    -> To declare an array we can use array literal [].
+    -> Array values can iterated with the help of index position.
+    -> Arrays in JS is heterogenious in nature.
+    -> Arrays in JS is growable in nature (inc or dec).
+
+    syntax : let arr = [value1 , value2 , value3 , ....];
+
+    objects
+
+    In Prog Lang objects is used to introduce the real world values to
+    virtual word.
+
+    IN js objects is collection of key and values.
+
+    We use { } to declare an object.
+
+    syntax : let obj = { key :value , key : value , ...}
+
+
+
+
+
+
+
+
+
+
+
+
+
+DOM
+    getElementById()
+    innerText
+    value
+    getAttribute()
+    setAttribute()
+    style
+    event listeners
+
+Javascript is a interpreted language which means it will execute our program line by line.
+
+    since we have this behaviour , even though we have an error  in some line of code , output
+    will be given for previous line of programm.
+
+    semicolans are not mandatory , but should be used as a best practise.
+
+
+Keywords
+    Keywords are the reserved words in the programming language  , which will do some
+    specific set of task.
+
+    var , if , else , switch , for , while , do  , continue , break , return , function ,
+    typeof.
+
+Variables
+   -> Variables are named memory location which can be used to store a any value.
+   -> Javascript is un-typed language because we does not decide the datatype in complie
+      time , so we just create a variables using ONE SINGLE KEYWORD ***VAR***
+   -> Default value in Javascript is undefined.
+
+      syntax :  var variableName   =   any value;
+                 declaration           initialization
+
+Rules to declare identifiers
+
+   -> first char should be an alphabet or $ or _.
+   -> rest of char can be alpha numeric or $ or _.
+   -> keywords cannot be an identifier.
+   -> use always camel case for an identifier.
+   -> identifiers are case sensitive.
+
+Datatype
+    Datatype will tell the type of the value that
+    we hav stored.
+
+    Premitive          Non-Premitive
+        |                    |
+    number                objects
+    string
+    boolean
+    undefined
+
+    to check the datatype we have typeof opeartor
+
+Opeartors
+    opeartors are used to perform opeartion
+    on operands.
+
+    1) Arithematic               - to do arithematic opeartion.
+        +
+        -
+        *
+        /
+        %
+        **  power of
+
+    2) Assignment                - to assign a value to a memory.
+        =
+        +=
+        -=
+        *=
+        /=
+        %=
+        **=
+
+    3) Comparision               - to compare any values and to get boolean output
+        ==    compares only values
+        ===   compares  values as well as datatype
+        !=    compares only values
+        !==   compares  values as well as datatype
+        >
+        >=
+        <
+        <=
+
+    4) logical                   - to combine multiple boolean and produce one boolean o/p
+        &&     satisfy all condition
+        ||     satisfy ony few condition
+
+    5) unary                     - opeartors which has only one operand
+        ++
+        --
+        +      convert from other datatype to number.
+        -      convert from other datatype to negetive number.
+        !      inverse the boolean value.
+
+    6) ternary or conditinal     - alternative of if and else
+        ?
+    7) string                    - to do string concatination
+        +
+
+Flow Control statements
+    to control the execution flow of the statements.
+
+    DMS      - if , else if , if else if else , switch
+    Looping  - for , while , do while
+
+Functions
+    Functions are block of code , which can be declared to
+    acheve code reusability.
+
+    syntax :  function fn_name( parameters )
+              {
+                 logics;
+              }
+
+              fn_name( args );
+
+    Ex :function reverseNumber( num )
+        {
+            var rev = 0;
+            while(num>0)
+            {
+                var last = num%10;
+                rev =( rev*10 )+ last;
+                num = parseInt(num/10);
+            }
+            console.log(rev);
+        }
+
+        reverseNumber(1234);
